@@ -1,6 +1,14 @@
 terraform {
   backend "gcs" {
-    bucket = "devops-directive-storybooks-terraform"
+    bucket = "high-office-343916-terraform-romain"
     prefix = "/state/storybooks"
+  }
+  required_providers {
+    mongodbatlas = {
+      source = "mongodb/mongodbatlas"
+    }
+    cloudflare = {
+      source = "cloudflare/cloudflare"
+    }    
   }
 }
