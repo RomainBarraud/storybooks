@@ -14,7 +14,6 @@ create-tf-backend-bucket:
 
 ### 
 
-ENV=staging
 check-env:
 ifndef ENV
 	$(error Please set ENV=[staging|prod])
