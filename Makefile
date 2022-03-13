@@ -13,6 +13,7 @@ create-tf-backend-bucket:
 	gsutil mb -p $(PROJECT_ID) gs://$(PROJECT_ID)-terraform-romain
 
 ### 
+
 ENV=staging
 check-env:
 ifndef ENV
